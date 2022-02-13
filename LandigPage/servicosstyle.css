@@ -118,12 +118,12 @@ main{
 .buttons{
     display: flex;
     justify-content: left;
-    gap: 100px;
+    gap: 50px;
 }
 
 .buttons button{
-    width: 500px;
-    height: 100px;
+    width: 350px;
+    height: 90px;
     cursor: pointer;
     border: 4px solid white;
     color: white;
@@ -151,7 +151,7 @@ main{
     left: 0;
     position: absolute;
     width: 0;
-    height: 100px;
+    height: 90px;
     background-color: rgb(61, 61, 61);
     z-index: -1;
     transition: 1s;
