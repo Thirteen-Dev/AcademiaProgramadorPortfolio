@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Lato:wght@400;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+/* ZERANDO O CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da Tela */
+
+html{
+    width: 100vw;
+    height: 100vh; 
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(17,17 ,17, 0.8), rgba(20, 20, 20, 1)), url(/imagens/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+
+}
+
+/*Menu - header - NaveBar*/
+
+header{
+    width: 100;
+    height: 7vh;
+    background: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    font-size: 1.8rem; 
+}
+
+.logo{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content .list-itens{
+   display: flex;
+   list-style: none;
+   gap: 15px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(11, 220, 248);
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    
+    width: 100%;
+}
+ 
+/* Centro - Conteudo Principal */
+
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Textos conteudo principal */
+
+.primary-text{
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text{
+    margin-bottom: 7rem;
+    font-size: 3rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+}
+
+/* Butões */
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+
+}
+
+.buttons button:hover{
+    color: rgb(11, 220, 248);
+    border: none;
+
+}
+
+.buttons button:before {
+    
+    content: '';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+.buttons button:hover:before{
+
+    width: 100%;
+}
+
